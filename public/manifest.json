@@ -1,0 +1,6 @@
+{
+  "name": "Dash — Arrancada", "version": "1.0.0", "manifest_version": 1,
+  "description": "Arraste personagens com uma ferramenta Dash, animação sincronizada e rajadas de velocidade.",
+  "icon": "./icon.svg", "background_url": "./background.html",
+  "action": {"title": "Dash — Configurações", "icon": "./icon.svg", "popover": "./index.html", "width": 340, "height": 420}
+}
