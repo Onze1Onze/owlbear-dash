@@ -27,7 +27,7 @@ async function permitted(item) {
 function makeEffects(item,end) {
   const angle=Math.atan2(end.y-item.position.y,end.x-item.position.x)*180/Math.PI;
   return Array.from({length:22},(_,i) => buildCurve()
-    .name('Dash temporário').layer('CHARACTER').zIndex(item.zIndex-0.01)
+    .name('Dash temporário').layer('DRAWING').zIndex(item.zIndex-0.01)
     .visible(item.visible).locked(true).disableHit(true)
     .position(item.position).rotation(angle)
     .points(i<8 ? [{x:-45,y:0},{x:-20,y:-4},{x:0,y:0}] : [{x:-4,y:0},{x:0,y:0}])
